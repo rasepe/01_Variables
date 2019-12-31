@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Fase 3</title>
+      <meta charset="UTF-8">
+   </head>
+   <body>
+      <script>
+         var any;
+         const interval = 4;
+         const any_naixement = 1976;
+         var traspas = false;
+         var fraseTrue = "és un any de traspàs";
+         var fraseFalse = "no és un any de traspàs";
+         for (any = 1948; any <= any_naixement; any++) {
+         	if (any % interval == 0) {
+         		traspas = true;
+         		document.write(any + " " + fraseTrue + "<br>");
+         	} else {
+         		traspas = false;
+         		document.write(any + " " + fraseFalse + "<br>");
+         	}
+         }     
+      </script>
+   </body>
+</html>
